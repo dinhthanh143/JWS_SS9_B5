@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>RikkeiMall International</title>
+</head>
+<body>
+<header>
+    <a th:href="@{/(lang='vi')}">Tiếng Việt</a> |
+    <a th:href="@{/(lang='jp')}">Tiếng Nhật</a> |
+    <a th:href="@{/(lang='en')}">Tiếng Anh</a>
+</header>
+
+<main>
+    <h1 th:text="#{nav.hello}">Default Hello</h1>
+    <button th:text="#{nav.cart}">Cart</button>
+    <p th:text="#{nav.promo}">Promos</p>
+</main>
+</body>
+</html>
